@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brendan Vogel Resume</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 20px;
+			background-color: #b5b1b1;
+			color: #333;
+		}
+		header {
+			background-color: #ff8f00;
+			color: #000000;
+			text-align: center;
+			padding: 10px;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			border: #000000 solid 4px;
+		}
+		h1 {
+			color: #000000;
+			margin: 0;
+		}
+		main {
+			max-width: 900px;
+			margin: 0 auto;
+			background: #ffffff;
+			padding: 24px;
+			border: #000000 solid 4px;
+			border-radius: 5px;
+		}
+		h2 {
+			margin-top: 24px;
+			margin-bottom: 10px;
+			color: #000000;
+			border-bottom: 3px solid #ff8f00;
+			padding-bottom: 6px;
+		}
+		p {
+			margin: 6px 0;
+		}
+		ul {
+			margin: 8px 0 0 20px;
+			padding: 0;
+		}
+		li {
+			margin-bottom: 6px;
+		}
+		.project-feature {
+			display: flex;
+			gap: 20px;
+			align-items: flex-start;
+			margin-bottom: 12px;
+		}
+		.project-feature-details {
+			flex: 1 1 60%;
+		}
+		.project-feature-media {
+			flex: 1 1 40%;
+			max-width: 360px;
+		}
+		.project-feature-media video {
+			width: 100%;
+			height: auto;
+			display: block;
+			border: #000000 solid 3px;
+			border-radius: 8px;
+			background: #000;
+		}
+		.project-feature-media img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border: #000000 solid 3px;
+			border-radius: 8px;
+		}
+		.project-feature-media p {
+			margin-top: 8px;
+			font-size: 14px;
+			color: #555;
+		}
+		@media (max-width: 768px) {
+			.project-feature {
+				flex-direction: column;
+			}
+			.project-feature-media {
+				max-width: 100%;
+			}
+		}
+		.nav-links {
+			list-style-type: none;
+			margin: 0 0 20px 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.nav-links li {
+			display: block;
+			margin: 0;
+			padding: 8px 14px;
+			background-color: #ff8f00;
+			border: #000000 solid 4px;
+			border-radius: 10%;
+		}
+		a {
+			text-decoration: none;
+			color: #000000;
+			font-size: 18px;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		footer {
+			margin-top: 40px;
+			text-align: center;
+			color: #777;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Brendan Vogel</h1>
+		<p>Resume details and background information</p>
+	</header>
+
+	<main>
+		<nav aria-label="Primary">
+			<ul class="nav-links">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="project_resume.html">Resume</a></li>
+				<li><a href="project_hobbies.html">Hobbies</a></li>
+			</ul>
+		</nav>
+
+		<h2>Contact</h2>
+		<p>Burlington, VT 05401</p>
+		<p>Manasquan, NJ 08736</p>
+		<p>(732) 608-1566</p>
+		<p>bvogel400@gmail.com</p>
+
+		<h2>Education</h2>
+		<p><strong>University of Vermont, Burlington VT</strong> - Bachelors of Science</p>
+		<p>August 2022 - May 2026</p>
+		<ul>
+			<li>Major in Computer Science</li>
+			<li>Minor in Pure Mathematics</li>
+			<li>Minor in Political Science</li>
+			<li>112+ Hours of Community Service</li>
+		</ul>
+
+		<p><strong>Howell High School, Howell NJ</strong> - High school Diploma</p>
+		<p>September 2018 - June 2022</p>
+		<ul>
+			<li>Varsity Basketball Player</li>
+			<li>National Honor Society</li>
+		</ul>
+
+		<h2>Projects</h2>
+		<div class="project-feature">
+			<div class="project-feature-details">
+				<p><strong>Segogelward's land rover</strong> - Computer Organization final project</p>
+				<ul>
+					<li>Remote controlled RC car with live stream video</li>
+					<li>Programmed in python</li>
+					<li>Controlled through command line (with xbox controller functionality)</li>
+					<li>Gained experience soldering and wiring</li>
+				</ul>
+			</div>
+			<div class="project-feature-media">
+				<video controls>
+					<source src="../images/RC.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<p>Live footage from the Land Rover project.</p>
+			</div>
+		</div>
+
+		<p><strong>8 Ball Pool</strong> - Advanced Programming final project</p>
+		<ul>
+			<li>Functional 8-ball pool game</li>
+			<li>Programmed in C++</li>
+		</ul>
+
+		<div class="project-feature">
+			<div class="project-feature-details">
+				<p><strong>Asteroids</strong> - Software engineering final project</p>
+				<ul>
+					<li>Modernized version of Asteroids arcade game, with online leaderboard functionality</li>
+					<li>Programmed in python</li>
+				</ul>
+			</div>
+			<div class="project-feature-media">
+				<img src="../images/ast.png" alt="Asteroids project screenshot">
+				<p>Asteroids project gameplay screenshot.</p>
+			</div>
+		</div>
+
+		<p><strong>Interactive Database</strong> - Software engineering project</p>
+		<ul>
+			<li>Database query system developed with Google firebase</li>
+			<li>Programmed in python</li>
+		</ul>
+
+		<p><strong>NFL defense predictor</strong> - Machine Learning project</p>
+		<ul>
+			<li>Statistical analysis prediction AI that analyzes defensive positioning to predict man or zone coverage</li>
+			<li>Programmed in python, using scikitlearn library</li>
+		</ul>
+
+		<h2>Experience</h2>
+		<p><strong>Frank's Franks, Wildwood NJ</strong> - Manager</p>
+		<p>June 2021 - PRESENT</p>
+		<p>Oversee all daily operations of the hot dog stand including:</p>
+		<ul>
+			<li>Purchasing all food items</li>
+			<li>Loading supply truck with supplies</li>
+			<li>Food sales</li>
+			<li>Employee management</li>
+			<li>Customer service</li>
+			<li>Managing and keeping track of sales/profits</li>
+			<li>Closing down stand at the end of the day</li>
+		</ul>
+
+		<p><strong>Anderson Hoyt Irrigation, Monroe Township NJ</strong> - Sprinkler technician</p>
+		<p>June 2023 - August 2023</p>
+		<ul>
+			<li>Assisted in sprinkler installation and replacement</li>
+			<li>Adjustment of underground water lines</li>
+			<li>Adjustment of underground electrical lines</li>
+			<li>Used power tools to cut lines and pipes</li>
+			<li>Dug holes for sprinklers</li>
+		</ul>
+
+		<h2>Skills</h2>
+		<ul>
+			<li>C++ / Python / Java / HTML</li>
+			<li>Microsoft Office</li>
+			<li>Versatility / Well roundedness</li>
+			<li>Time efficiency</li>
+			<li>Leadership experience</li>
+			<li>Agile development</li>
+			<li>Interpersonal communication</li>
+			<li>Typing speed</li>
+		</ul>
+
+		<h2>Awards / Titles</h2>
+		<ul>
+			<li>2025 Presidential Leadership Fellow (1 of 13 in my class)</li>
+			<li>President of Phi Mu Delta Nu Gamma Chapter (2024-25)</li>
+			<li>VP of Member Development, Phi Mu Delta Nu Gamma Chapter (2023-24)</li>
+			<li>Intramurals Chair, Nu Gamma Chapter (2023)</li>
+			<li>IFC delegate (2023)</li>
+			<li>FSL Emerging Leader Award Winner (2024)</li>
+			<li>VP of Administration, Phi Mu Delta chapter (2025-26)</li>
+		</ul>
+
+		<h2>Prominent Courses</h2>
+		<ul>
+			<li>Computer Organization</li>
+			<li>Data Structures and Algorithms</li>
+			<li>Advanced Programming</li>
+			<li>Algorithm Design/Analysis</li>
+			<li>Database Systems</li>
+			<li>Machine Learning</li>
+			<li>Data Privacy</li>
+			<li>Software Engineering</li>
+			<li>Advanced Engineering Mathematics</li>
+			<li>Constitutional Law: American Civil Rights</li>
+			<li>US Political System</li>
+			<li>Congress</li>
+		</ul>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Brendan Vogel. All rights reserved.</p>
+	</footer>
+</body>
+</html>

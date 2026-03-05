@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendan Vogel's Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #b5b1b1;
+            color: #333;
+        }
+        header {
+            background-color: #ff8f00;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: #000000 solid 4px;
+        }
+        h1 {
+            color: #000000;
+            margin: 0;
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 24px;
+            border: #000000 solid 4px;
+            border-radius: 5px;
+        }
+        .content-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .profile-image {
+            display: block;
+            max-width: 220px;
+            height: auto;
+            border: #000000 solid 5px;
+            border-radius: 5%;
+        }
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .nav-links li {
+            display: block;
+            width: fit-content;
+            padding: 8px 14px;
+            background-color: #ff8f00;
+            border: #000000 solid 4px;
+            border-radius: 10%;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 700px) {
+            .content-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                width: 100%;
+                align-items: center;
+            }
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi! I'm Brendan Vogel</h1>
+        <p>I developed this website as a showcase of my experience, hobbies, interests, and projects.</p>
+    </header>
+
+    <main>
+        <article class="content-row">
+            <img class="profile-image" src="images/me.JPG" alt="Brendan Vogel">
+            <nav aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="channels/project_resume.html">Resume</a></li>
+                    <li><a href="channels/project_hobbies.html">Hobbies</a></li>
+                    <li><a href="channels/project_about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brendan Vogel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
