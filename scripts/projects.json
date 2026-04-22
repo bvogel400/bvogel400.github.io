@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Segogelward's Land Rover",
+    "summary": "Built a remote-controlled rover with live video stream and command-line controls.",
+    "tech": ["Python", "Hardware", "CLI"]
+  },
+  {
+    "name": "Asteroids with Leaderboard",
+    "summary": "Created a modern arcade-style asteroids game with online scoring functionality.",
+    "tech": ["Python", "Game Design", "Data"]
+  },
+  {
+    "name": "NFL Defense Predictor",
+    "summary": "Used machine learning to predict man or zone coverage from defensive positioning.",
+    "tech": ["Python", "scikit-learn", "ML"]
+  },
+  {
+    "name": "Interactive Database Tool",
+    "summary": "Designed a query interface backed by Firebase for quick data exploration.",
+    "tech": ["Python", "Firebase", "Databases"]
+  }
+]
